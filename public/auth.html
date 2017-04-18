@@ -119,6 +119,7 @@ limitations under the License.
           var uid = user.uid;
           var providerData = user.providerData;
           // [START_EXCLUDE]
+	  document.getElementById("user-name").textContent = displayName;
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
           document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
@@ -172,7 +173,8 @@ limitations under the License.
 
           <!-- Container where we'll display the user details -->
           <div class="quickstart-user-details-container">
-            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+ 	  Welcome <span id="user-name">Please Sign In</span>           
+ Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
             <div>Firebase auth <code>currentUser</code> object value:</div>
             <pre><code id="quickstart-account-details">null</code></pre>
             <div>GitHub OAuth Access Token:</div>
