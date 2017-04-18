@@ -129,19 +129,19 @@ limitations under the License.
           var providerData = user.providerData;
           // [START_EXCLUDE]
 	  document.getElementById("user-name").textContent = "Welcome " + displayName;
-          document.getElementById('quickstart-sign-in-status').textContent = '';
+         // document.getElementById('quickstart-sign-in-status').textContent = '';
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-          document.getElementById('quickstart-account-details').textContent = "";
+         // document.getElementById('quickstart-account-details').textContent = "";
 	  document.getElementById("resourceList").style.display = "block";      
     // [END_EXCLUDE]
         } else {
           // User is signed out.
           // [START_EXCLUDE]
  	  document.getElementById("user-name").textContent = "Please Sign In";
-          document.getElementById('quickstart-sign-in-status').textContent = '';
+         // document.getElementById('quickstart-sign-in-status').textContent = '';
           document.getElementById('quickstart-sign-in').textContent = 'Sign in with GitHub';
-          document.getElementById('quickstart-account-details').textContent = '';
-          document.getElementById('quickstart-oauthtoken').textContent = '';
+         // document.getElementById('quickstart-account-details').textContent = '';
+         // document.getElementById('quickstart-oauthtoken').textContent = '';
 	  document.getElementById("resourceList").style.display = "none";          
  // [END_EXCLUDE]
         }
@@ -187,10 +187,11 @@ limitations under the License.
           <!-- Container where we'll display the user details -->
           <div class="quickstart-user-details-container">
  	   <span id="user-name">Please Sign In</span><br>           
-            <span id="quickstart-sign-in-status"></span>
+     <!--       <span id="quickstart-sign-in-status"></span>
             <pre><code id="quickstart-account-details"></code></pre>
-            <pre><code id="quickstart-oauthtoken"></code></pre>
+            <pre><code id="quickstart-oauthtoken"></code></pre> -->
 <div id="resourceList">
+<p> Post your favorite web-development resources (tutorials, articles, etc.) from this class to remember and use in future projects. </p>
 <form novalidate class="simple-form">
   Resources: <input type="text" ng-model="user.chat" /><br />
   <input type="submit" ng-click="update(user)" value="Save" />
